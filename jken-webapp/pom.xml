@@ -23,32 +23,17 @@
     <dependencies>
         <dependency>
             <groupId>jken</groupId>
-            <artifactId>jken-module-blog</artifactId>
+            <artifactId>jken-module-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>jken</groupId>
-            <artifactId>jken-module-cms</artifactId>
-            <version>${project.version}</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <dependency>
-            <groupId>jken</groupId>
-            <artifactId>jken-module-scheduler</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>jken</groupId>
-            <artifactId>jken-module-wechat</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>mysql</groupId>-->
-        <!--            <artifactId>mysql-connector-java</artifactId>-->
-        <!--        </dependency>-->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.h2database</groupId>-->
+<!--            <artifactId>h2</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>

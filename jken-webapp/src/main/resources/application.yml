@@ -10,27 +10,20 @@ server:
     io-threads: 1
     worker-threads: 2
     buffer-size: 1024
-    buffers-per-region: 1024
     direct-buffers: true
 spring:
   mvc:
     static-path-pattern: /**
   datasource:
-    platform: h2
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:~/jken
-    username: sa
-    password: sa
+    platform: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.106.176.40:3306/smart_net
+    username: root
+    password: Stream1234
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       pool-name: blah
       maximum-pool-size: 2
-  h2:
-    console:
-      path: /h2
-      enabled: true
-      settings:
-        web-allow-others: true
   jpa:
     hibernate:
       ddl-auto: update
@@ -44,7 +37,5 @@ spring:
         one-indexed-parameters: true
         page-parameter: page
         size-parameter: limit
-  quartz:
-    jobStoreType: JDBC
   thymeleaf:
     cache: false
