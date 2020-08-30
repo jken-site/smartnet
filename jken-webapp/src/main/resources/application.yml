@@ -19,7 +19,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.106.176.40:3306/smart_net
     username: root
-    password: Stream1234
+    password: 1234
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       pool-name: blah
